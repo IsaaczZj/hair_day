@@ -19,9 +19,50 @@
 
   --ff: "Catamaran", sans-serif;
 
-  --tile-lg: 700 2rem/1.5rem var(--ff); 
+  --tile-lg: 700 2rem/1.5rem var(--ff);
   --title-md: 700 1rem/1.5rem var(--ff);
   --title-sm: 700 0.875rem/1.25rem var(--ff);
   --text-md: 400 1rem/1.5rem var(--ff);
-  --text-sm: 400 0.875rem/1.25rem var(--ff);        
+  --text-sm: 400 0.875rem/1.25rem var(--ff);
+}
+body {
+  font-size: var(--text-md);
+  font-family: var(--ff);
+}
+
+::-webkit-scrollbar {
+  width: 0.3rem;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--yellow);
+}
+.container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: calc(100vh - 1.5rem);
+  grid-template-areas: "form schedule";
+  padding: 0.75rem;
+}
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--gray-600);
+  padding: 0.75rem 1.25rem;
+  border-bottom-right-radius: 0.75rem;
+  height: 3.5rem;
+  width: 8.7rem;
+}
+
+@media (max-width: 1100px) {
+  :root {
+    font-size: 0.875rem;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 }
