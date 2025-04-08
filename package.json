@@ -1,8 +1,16 @@
 {
+  "name": "hairday",
+  "description": "Uma aplicação web para gerenciamento de agendamentos para cortes de cabelo",
+  "author": "Isaac Medeiros",
   "scripts": {
-    "start": "json-server --watch server.json --port=3333"
+    "start": "json-server --watch server.json --port=3333",
+    "build": "webpack"
   },
   "dependencies": {
     "json-server": "^1.0.0-beta.3"
+  },
+  "devDependencies": {
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
   }
 }
