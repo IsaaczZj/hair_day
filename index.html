@@ -26,7 +26,7 @@
 
         <label for="date" class="label">Data</label>
         <div class="input">
-          <i><img src="./assets/CalendarBlank.svg" alt=""></i>
+          <i><img src="./assets/CalendarBlank.svg" alt="" /></i>
           <input type="date" id="date" name="date" required />
         </div>
 
@@ -36,11 +36,7 @@
           <li data-period="morning" value="09:00" class="hour hour-available">
             09:00
           </li>
-          <li
-            data-period="morning"
-            value="10:00"
-            class="hour hour-available"
-          >
+          <li data-period="morning" value="10:00" class="hour hour-available">
             10:00
           </li>
           <li data-period="morning" value="11:00" class="hour hour-unavailable">
@@ -64,7 +60,7 @@
           >
             14:00
           </li>
-          <li data-period="afternoon" value="15:00" class="hour hour-available" >
+          <li data-period="afternoon" value="15:00" class="hour hour-available">
             15:00
           </li>
           <li
@@ -96,7 +92,7 @@
           </li>
         </ul>
 
-        <label for="client" class=" label">Cliente</label>
+        <label for="client" class="label">Cliente</label>
         <div class="input">
           <i><img src="./assets/userSquare.svg" alt="Cliente" /></i>
           <input
@@ -109,6 +105,56 @@
         </div>
         <button class="button">Agendar</button>
       </form>
+
+      <aside class="schedule">
+        <header>
+          <h1>Agendamentos</h1>
+          <p>Visualize os agendamentos de acordo com o dia selecionado</p>
+        </header>
+
+        <section class="schedule-period">
+          <header>
+            <img src="./assets/SunHorizon.svg" alt="Manhã">
+            <strong>Manhã</strong>
+            <span>09h-12h</span>
+          </header>
+          <ul id="period-morning" class="period">
+            <li>
+              <strong>11:00</strong>
+              <span>Isaac Medeiros</span>
+              <img src="./assets/cancel.svg" alt="calcel-icon" class="cancel-icon">
+            </li>
+          </ul>
+        </section>
+        <section class="schedule-period">
+          <header>
+            <img src="./assets/CloudSun.svg" alt="Manhã">
+            <strong>Manhã</strong>
+            <span>09h-12h</span>
+          </header>
+          <ul id="period-morning" class="period">
+            <li>
+              <strong>11:00</strong>
+              <span>Isaac Medeiros</span>
+              <img src="./assets/cancel.svg" alt="calcel-icon" class="cancel-icon">
+            </li>
+          </ul>
+        </section>
+        <section class="schedule-period">
+          <header>
+            <img src="./assets/MoonStars.svg" alt="Manhã">
+            <strong>Manhã</strong>
+            <span>09h-12h</span>
+          </header>
+          <ul id="period-morning" class="period">
+            <li>
+              <strong>11:00</strong>
+              <span>Isaac Medeiros</span>
+              <img src="./assets/cancel.svg" alt="calcel-icon" class="cancel-icon">
+            </li>
+          </ul>
+        </section>
+      </aside>
     </main>
     <script src="./scripts/main.js"></script>
   </body>
