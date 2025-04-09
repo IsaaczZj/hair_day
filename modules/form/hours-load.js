@@ -1,8 +1,9 @@
 import { openingHours } from "../../utils/opening-hours.js";
 import dayjs from "dayjs";
+import { hoursClick } from "./hours-click.js";
 const hours = document.getElementById("hours");
 export function hoursLoad({ date }) {
-
+  hours.innerHTML= ''
   const opening = openingHours.map((hour) => {
     const [scheduleHour] = hour.split(":");
 
@@ -14,7 +15,6 @@ export function hoursLoad({ date }) {
     };
     
   });
-  console.log(opening);
 
   opening.forEach(({ hour, available }) => {
     const li = document.createElement("li");
@@ -31,6 +31,8 @@ export function hoursLoad({ date }) {
     }
     hours.append(li);
   });
+  
+  hoursClick()
 }
 
 function hourHeaderAdd(title) {
