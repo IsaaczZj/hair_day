@@ -5,7 +5,6 @@ const selectedDate = document.getElementById("date")
 
 
 export function schedulesDay(){
-  //Obtem a data do input
   const date = selectedDate.value
   hoursLoad({date})
 
