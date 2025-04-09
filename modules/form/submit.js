@@ -1,5 +1,4 @@
 import dayjs from "dayjs";
-import { hoursClick } from "./hours-click";
 import { scheduleNew } from "../../services/schedule-new";
 const form = document.querySelector("form")
 const selectedDate = document.getElementById("date")
