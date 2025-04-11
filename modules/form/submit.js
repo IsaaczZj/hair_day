@@ -27,7 +27,7 @@ form.addEventListener("submit", async (e) => {
 
     const scheduling = dayjs(selectedDate.value).add(hour, "hour");
 
-    const id = new Date().getTime();
+    const id = new Date().getTime().toString();
 
     const newScheduling = {
       id,

@@ -10,9 +10,6 @@ export async function schedulesDay() {
   
   schedulesShow({dailySchedules})
   
-  
-  
-  
   //Os horarios disponiveis (horarios no futuro + nao agendados) do lado esquerdo
   hoursLoad({ date, dailySchedules });
 }
