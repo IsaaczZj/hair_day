@@ -1,3 +1,5 @@
+![Image](https://github.com/user-attachments/assets/32215a8e-357a-4613-be3f-9c9ba81dbb9d)
+
 # 💇‍♀️ Hair Day - Sistema de Agendamentos para Salões
 
 ## 📖 Sobre o Projeto
